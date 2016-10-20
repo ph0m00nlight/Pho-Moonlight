@@ -1,0 +1,115 @@
+/* CSS Document */
+
+.Block1
+{
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 80px;
+	float: left;
+	background: #2ECC71;
+	background-image: url('./pictures/1wow.jpg');
+	background-size:    833px 60px;
+  	background-repeat:   no-repeat;
+  	background-position: center center;   
+	margin: 0px;
+}
+
+.Block2
+{
+  overflow: hidden;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 1000px;
+	float: left;
+	background: #F4D03F;
+	background-size:    100% auto;
+  	background-repeat:   no-repeat;
+  	background-position: center center;   
+	margin: 0px;
+}			
+
+.menu {
+	width:100%;
+	height: 40px;
+	float: left;
+	background: #27AE60;
+	margin:0px auto;
+}
+
+.menu li {
+	margin:0px;
+	list-style:none;
+	font-family:'Determination Sans';
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: #28B463;	
+}
+
+.menu a {
+	transition:all linear 0.15s;
+	color:#000000;
+}
+
+.menu a:hover
+{
+	color: #000000;
+	background:#2ECC71;
+}
+
+.menu > ul > li {
+	float:left;
+	display:inline-block;
+	position:relative;
+	font-size:21px;
+}
+
+.menu > ul > li > a {
+/*
+	padding:10px 40px;
+	display:inline-block;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+	color:#ff0000;
+*/
+    display:block;
+    text-align: center;
+    white-space: nowrap;
+    height: 21px;
+    width: 176px;
+    overflow:hidden;
+    line-height: 21px;
+    margin-right: auto;
+}
+
+
+.menu li:hover .sub-menu {
+	z-index:1;
+	opacity:1;
+}
+
+.sub-menu {
+	width:160%;
+	padding:5px 0px;
+	position:absolute;
+	top:100%;
+	left:0px;
+	z-index:-1;
+	opacity:0;
+	transition:opacity linear 0.15s;
+	box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+	background:#58D68D;
+}
+
+.sub-menu li {
+	display:block;
+	font-size:17px;
+	font-weight: bold;
+}
+
+.sub-menu li a {
+	padding:10px 30px;
+	display:block;
+	color:#000000;
+}
