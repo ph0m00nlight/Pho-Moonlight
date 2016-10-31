@@ -1,0 +1,130 @@
+/* CSS Document */
+
+.Block1
+{
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+    height: 130px;
+	float: left;
+	background: #FFFFFF;
+	background-image: url('./images/Pho-Moonlight.svg');
+	background-size: 840px 600px;
+  	background-repeat: no-repeat;
+  	background-position: center center;   
+	margin: 0px;
+}
+
+.Block2
+{
+    overflow: hidden;
+    position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 1000px;
+	float: left;
+	background: #FFFFFF;
+	background-size: 100% auto;
+  	background-repeat: no-repeat;
+  	background-position: center center;   
+	margin: 0px;
+}			
+
+.menu 
+{
+	width:100%;
+	height: 40px;
+	float: left;
+	background: #900C3F;
+	margin:0px auto;
+}
+
+.menu li 
+{
+	margin:0px;
+	list-style:none;
+	font-family:'Belleza';
+    border-width: 0px 1px;
+    border-style: solid;	
+    width: 24.25%;
+}
+
+.menu a 
+{
+	transition:all linear 0.15s;
+	color:#FFFFFF; 
+}
+
+.menu a:hover
+{
+	color: #FFFFFF;
+	background:#B00E4D;
+}
+
+.menu > ul > li 
+{
+	float:left;
+	display:inline-block;
+	position:relative;
+	font-size:21px;
+    
+}
+
+.menu > ul > li > a 
+{
+    display:flex;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.menu li:hover .sub-menu 
+{
+	z-index:1;
+	opacity:1;
+}
+
+.sub-menu 
+{
+    width:100%;
+	padding:5px 0px;
+	position:absolute;
+	top:100%;
+	left:0px;
+	z-index:-1;
+	opacity:0;
+	transition:opacity linear 0.15s;
+	box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+	background:#900C3F;
+}
+
+.sub-menu li 
+{
+	display:block;
+	font-size:17px;
+	font-weight: bold;
+}
+
+.sub-menu li a 
+{
+	padding:10px 30px;
+	display:block;
+	color:#FFFFFF;
+}
+
+.clearfix:after 
+{
+	display:block;
+	clear:both;
+	width:100%;
+}
+
+.plusButton
+{
+    border: none;
+    
+    
+}
+
